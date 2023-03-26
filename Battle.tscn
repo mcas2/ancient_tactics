@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://c87hcha2cybrj"]
+
+[ext_resource type="Script" path="res://Formation.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://btlclwseu0a3v" path="res://images/formation_blue.png" id="2"]
+
+[sub_resource type="RectangleShape2D" id="1"]
+size = Vector2(75, 25)
+
+[node name="AllyFormation" type="CharacterBody2D"]
+position = Vector2(25, 64)
+scale = Vector2(0.3, 2.5)
+input_pickable = true
+script = ExtResource("1")
+
+[node name="AllyFormationSprite" type="Sprite2D" parent="."]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2")
+
+[node name="AllyFormationShape" type="CollisionShape2D" parent="."]
+scale = Vector2(2, 2)
+shape = SubResource("1")
