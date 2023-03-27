@@ -7,8 +7,7 @@
 size = Vector2(75, 25)
 
 [node name="AllyFormation" type="CharacterBody2D"]
-position = Vector2(25, 64)
-scale = Vector2(0.3, 2.5)
+position = Vector2(84, 42)
 input_pickable = true
 script = ExtResource("1")
 
