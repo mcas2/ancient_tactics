@@ -10,6 +10,9 @@ var selectable = false
 var selected = false
 var rotable = false
 
+func _init():
+	print("Click to select, Q to deselect, R to rotate")
+
 func _input(event):
 	if selectable && event.is_action("right_click"):
 		selected = true
@@ -19,6 +22,9 @@ func _input(event):
 			target = get_global_mouse_position()
 		if event is InputEventKey and event.pressed and event.keycode == KEY_R:
 			rotate_formation(event)
+		if event is InputEventKey and event.pressed and event.keycode == KEY_Q:
+			sprite.texture = default_texture
+			selected = false
 	if (rotable):
 		sprite.texture = rotable_texture
 		look_at(get_global_mouse_position())
