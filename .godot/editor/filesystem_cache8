@@ -1,11 +1,11 @@
 2a60927148abd1d33b818b535e306557
-::res://::1680019718
-Ally.gd::GDScript::-1::1680019670::0::1::::<>CharacterBody2D<>::
-default_env.tres::Environment::7190676148840220361::1680019664::0::1::::<><>::
-Enemy.gd::GDScript::-1::1680019670::0::1::::<>CharacterBody2D<>::
+::res://::1680024201
+Ally.gd::GDScript::-1::1680021571::0::1::::<>CharacterBody2D<>::
+default_env.tres::Environment::7190676148840220361::1680024366::0::1::::<><>::
+Enemy.gd::GDScript::-1::1680021571::0::1::::<>CharacterBody2D<>::
 icon.png::CompressedTexture2D::5999499285713809790::1679930607::1679930607::1::::<><>::
-Main.tscn::PackedScene::5129251305319642383::1680019311::0::1::::<><>::uid://c87hcha2cybrj<>uid://btlclwseu0a3v
-Node.gd::GDScript::-1::1680019132::0::1::::<>CharacterBody2D<>::
+Main.gd::GDScript::-1::1680024201::0::1::::<>Node<>::
+Main.tscn::PackedScene::5349557626156897084::1680024366::0::1::::<><>::res://Main.gd<>res://Ally.gd<>uid://btlclwseu0a3v<>res://Enemy.gd<>uid://cw33kp8gc7mlo
 ::res://images/::1680018214
 formation_blue.png::CompressedTexture2D::3742859129358495317::1679934151::1679934477::1::::<><>::
 formation_red.png::CompressedTexture2D::6376517277378453332::1680018055::1680018119::1::::<><>::

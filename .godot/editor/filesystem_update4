@@ -1,5 +1,5 @@
 res://default_env.tres
 res://Main.tscn
-res://Ally.gd
-res://Enemy.gd
 res://Main.gd
+res://Formation.gd
+res://Formation.tscn
