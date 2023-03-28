@@ -10,9 +10,6 @@ var selectable = false
 var selected = false
 var rotable = false
 
-func _init():
-	print("Click to select, Q to deselect, R to rotate")
-
 func _input(event):
 	if selectable && event.is_action("right_click"):
 		selected = true
@@ -29,7 +26,7 @@ func _input(event):
 		sprite.texture = rotable_texture
 		look_at(get_global_mouse_position())
 
-func _physics_process(delta):
+func _physics_process(_delta):
 	velocity = position.direction_to(target) * speed
 	if position.distance_to(target) > 10:
 		move_and_slide()
@@ -40,7 +37,7 @@ func _mouse_enter():
 func _mouse_exit():
 	selectable = false
 
-func rotate_formation(event):
+func rotate_formation(_event):
 	if (rotable):
 		rotable = false
 		sprite.texture = selected_texture

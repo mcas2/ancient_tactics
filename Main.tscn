@@ -1,0 +1,35 @@
+[gd_scene load_steps=7 format=3 uid="uid://cihmox84ufbsm"]
+
+[ext_resource type="Script" path="res://Main.gd" id="1_b6lgy"]
+[ext_resource type="Script" path="res://Ally.gd" id="1_vhliu"]
+[ext_resource type="Texture2D" uid="uid://btlclwseu0a3v" path="res://images/formation_blue.png" id="2_so6tx"]
+[ext_resource type="Script" path="res://Enemy.gd" id="3_po2b1"]
+[ext_resource type="Texture2D" uid="uid://cw33kp8gc7mlo" path="res://images/formation_red.png" id="4_jn2jo"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rv3ib"]
+size = Vector2(300, 100)
+
+[node name="Node" type="Node"]
+script = ExtResource("1_b6lgy")
+
+[node name="AllyFormation" type="CharacterBody2D" parent="."]
+position = Vector2(159, 59)
+input_pickable = true
+script = ExtResource("1_vhliu")
+
+[node name="AllyFormationSprite" type="Sprite2D" parent="AllyFormation"]
+texture = ExtResource("2_so6tx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AllyFormation"]
+shape = SubResource("RectangleShape2D_rv3ib")
+
+[node name="EnemyFormation" type="CharacterBody2D" parent="."]
+position = Vector2(987, 589)
+input_pickable = true
+script = ExtResource("3_po2b1")
+
+[node name="EnemyFormationSprite" type="Sprite2D" parent="EnemyFormation"]
+texture = ExtResource("4_jn2jo")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="EnemyFormation"]
+shape = SubResource("RectangleShape2D_rv3ib")
